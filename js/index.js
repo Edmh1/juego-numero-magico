@@ -10,9 +10,9 @@ const btnReiniciar = document.getElementById("btn-restart");
 const tablaIntentos = document.getElementById("table");
 
 // Inicializar el juego
-document.addEventListener("DOMContentLoaded", iniciarJuego());
-btnIntentar.addEventListener("click", compararNumeros());
-btnReiniciar.addEventListener("click", iniciarJuego());
+document.addEventListener("DOMContentLoaded", iniciarJuego);
+btnIntentar.addEventListener("click", compararNumeros);
+btnReiniciar.addEventListener("click", iniciarJuego);
 
 // Función para inicializar el juego
 function iniciarJuego() {
