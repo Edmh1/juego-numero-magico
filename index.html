@@ -5,37 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Número Mágico</title>
     <link rel="shortcut icon" href="assets/img/numero-magico.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header id="cabecera">
+    <header>
         <div id="cont-logo">
             <img id="img-logo" src="assets/img/logo.svg" alt="Logo de la aplicación">
         </div>
-        <div id="cont-titulo">
-            <h1>JUEGO DEL NÚMERO MAGICO</h1>
-        </div>
+        <h1 id="title">Juego del Número Mágico</h1>
     </header>
 
-    <main id="principal">
+    <main>
         <!-- Sección de instrucciones -->
-        <section id="instrucciones">
+        <section id="instructions">
             <h2>Instrucciones</h2>
             <p>El juego consiste en adivinar un número entre 1 y 100. Se te indicará si el número ingresado es mayor o menor al número mágico. Tienes 10 intentos.</p>
         </section>
 
-        <!-- Sección del juego -->
-        <section id="cont-juego">
-            
-            <!-- Sección de interacción -->
-            <div id="juego">
-                <h2>Ingrese un número:</h2>
-                <input type="number" id="numero" name="numero" placeholder="Ingrese un número" min="1" max="100">
-                <button id="btnVerificar">Verificar</button>
-            </div>
+        <!-- Contenedor para colocar las secciones en fila -->
+        <div id="game-wrapper">
+            <!-- Sección del juego -->
+            <section id="game-container">
+                
+                <form id="game-form">
+                    <label for="number">Ingresa un número:</label>
+                    <input type="number" id="number" name="number" min="1" max="100" required>
+                    <button type="button" id="btn-check">Intentar</button>
+                </form>
+                <!-- Botón de reinicio oculto inicialmente -->
+                <button id="btn-restart">Volver a jugar</button>
+            </section>
 
             <!-- Tabla de intentos -->
-            <div id="informacion">
+            <section id="attempts">
                 <table>
                     <thead>
                         <tr>
@@ -43,19 +45,19 @@
                             <th>Elección</th>
                         </tr>
                     </thead>
-                    <tbody id="tabla">
-                        <tr>
-                            <td>1</td>
-                            <td>Mayor</td>
-                        </tr>
+                    <tbody id="table">
+                        <!-- Aquí se insertarán los intentos con JS -->
                     </tbody>
                 </table>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
-    <footer id="pie">
+    <footer>
         <p>&copy; 2025 Juego del Número Mágico</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
