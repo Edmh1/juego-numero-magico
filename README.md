@@ -19,5 +19,7 @@ El Juego del Número Mágico es una aplicación web en la que el jugador debe ad
 - Diseño adaptable para dispositivos móviles.
 
 ## Capturas de Pantalla
-_Agregar capturas del juego en funcionamiento aquí_
+![Alt text](/assets/doc/image1.png?raw=true "Texto informativo")
+![Alt text](/assets/doc/image2.png?raw=true "Texto victoria")
+![Alt text](/assets/doc/image3.png?raw=true "Vista general")
 
